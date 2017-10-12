@@ -14,3 +14,19 @@ end
 def move(board, index, char = "X")
   board[index] = char
 end
+
+def valid_move?(board, index)
+  if !position_taken?(board, index) && index.between?(0, 8)
+    return true
+  else
+    return false
+  end
+end
+
+def position_taken?(board, index)
+  if board[index] == "X" || board[index] == "O"
+   return true
+ else #board[index] == " " || "" || nil
+   return false
+  end
+end
