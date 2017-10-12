@@ -40,7 +40,19 @@ def turn(board)
   user_input = gets.chomp
   index = input_to_index(user_input)
   valid_move?(board, index)
-
-
-   #ask for input
+  turn(board)
 end
+
+
+
+
+get input
+convert input to index
+if index is valid
+  make the move for input
+  show the board
+else
+  ask for input again until you get a valid input
+end
+
+
