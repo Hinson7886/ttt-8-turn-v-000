@@ -42,9 +42,3 @@ def turn(board)
   valid_move?(board, index)
   turn(board)
 end
-
-
-
-
-
-
