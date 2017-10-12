@@ -40,9 +40,7 @@ def turn(board)
   user_input = gets.chomp
   index = input_to_index(user_input)
   valid_move?(board, index)
-  if valid_move? != true
-    puts "Please enter 1-9:"
-  end
-
+  if
+  
    #ask for input
 end
